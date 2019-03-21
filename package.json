@@ -1,11 +1,14 @@
 {
-    "name": "that-simple-dynamo",
+    "name": "@freakyfriday/that-simple-dynamo",
     "description": "A dynamo objectstore for That Simple Model",
-    "version": "1.0.14",
+    "version": "1.0.20",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ThatDevCompany/that-simple-dynamo.git"
+        "url": "https://github.com/freakyfriday/that-simple-dynamo.git"
+    },
+    "publishConfig": {
+        "access": "public"
     },
     "contributors": [
         "Stephen James <steve@thatdevcompany.com> (http://thatdevcompany.com)"
@@ -17,12 +20,12 @@
         "publish": "node admin/scripts/publish.js"
     },
     "dependencies": {
+        "@freakyfriday/that-simple-objectstore": "1.1.2",
         "aws-sdk": "^2.360.0",
         "class-transformer": "^0.2.0",
         "lodash": "^4.17.11",
         "that-koa-error": "^1.0.1",
-        "that-simple-model": "^1.0.2",
-        "that-simple-objectstore": "1.0.7"
+        "that-simple-model": "^1.0.2"
     },
     "devDependencies": {
         "@types/jasmine": "2.8.8",
