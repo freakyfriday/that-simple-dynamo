@@ -2,7 +2,7 @@ import * as AWS from 'aws-sdk'
 import * as M from 'that-simple-model'
 import * as util from 'util'
 import * as DynamoUtils from '@/dynamoUtils'
-import * as O from 'that-simple-objectstore'
+import * as O from '@freakyfriday/that-simple-objectstore'
 import * as _ from 'lodash'
 import { DynamoError } from '@/errors/dynamo.error'
 
@@ -46,7 +46,8 @@ export async function query<T extends M.IModel>(
 					ExpressionAttributeNames: names,
 					ExpressionAttributeValues: values,
 					ExclusiveStartKey: options.continuationToken,
-					Limit: options.limit
+					Limit: options.limit,
+					ScanIndexForward: options.indexAsc
 				}
 			})(options.where)
 		}

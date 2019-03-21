@@ -1,4 +1,7 @@
-import { IObjectStore, ObjectStoreQueryStatus } from 'that-simple-objectstore'
+import {
+	IObjectStore,
+	ObjectStoreQueryStatus
+} from '@freakyfriday/that-simple-objectstore'
 import * as T from '../testing'
 
 /**

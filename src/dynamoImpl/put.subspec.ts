@@ -1,4 +1,4 @@
-import { IObjectStore } from 'that-simple-objectstore'
+import { IObjectStore } from '@freakyfriday/that-simple-objectstore'
 import * as T from '../testing'
 
 /**

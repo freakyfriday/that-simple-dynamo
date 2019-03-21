@@ -1,6 +1,6 @@
 import * as AWS from 'aws-sdk'
 import * as M from 'that-simple-model'
-import * as O from 'that-simple-objectstore'
+import * as O from '@freakyfriday/that-simple-objectstore'
 import * as Impl from '@/dynamoImpl'
 
 /**
