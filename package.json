@@ -1,7 +1,7 @@
 {
-    "name": "@freakyfriday/that-simple-dynamo",
+    "name": "that-simple-dynamo-extended",
     "description": "A dynamo objectstore for That Simple Model",
-    "version": "1.0.35",
+    "version": "1.0.37",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -20,7 +20,7 @@
         "publish": "node admin/scripts/publish.js"
     },
     "dependencies": {
-        "@freakyfriday/that-simple-objectstore": "1.1.2",
+        "that-simple-objectstore-extended": "1.0.9",
         "aws-sdk": "^2.360.0",
         "class-transformer": "^0.2.0",
         "lodash": "^4.17.11",

@@ -1,7 +1,7 @@
 import {
 	IObjectStore,
 	ObjectStoreQueryStatus
-} from '@freakyfriday/that-simple-objectstore'
+} from 'that-simple-objectstore-extended'
 import * as T from '../testing'
 
 /**

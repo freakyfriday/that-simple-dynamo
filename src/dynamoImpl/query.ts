@@ -2,7 +2,7 @@ import * as AWS from 'aws-sdk'
 import * as M from 'that-simple-model'
 import * as util from 'util'
 import * as DynamoUtils from '@/dynamoUtils'
-import * as O from '@freakyfriday/that-simple-objectstore'
+import * as O from 'that-simple-objectstore-extended'
 import * as _ from 'lodash'
 import { DynamoError } from '@/errors/dynamo.error'
 

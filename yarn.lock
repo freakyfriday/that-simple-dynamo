@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@freakyfriday/that-simple-objectstore@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@freakyfriday/that-simple-objectstore/-/that-simple-objectstore-1.1.2.tgz#713def5b1bc66b3e6fd8718ac61ec0f3ee65f56a"
-  integrity sha512-vz/kPNL0+izRtD/S2OJVDHtFfPY9Q6KqEDyvfxGYLTnHc/y54G5y8Jcjnw5gENQxlbpHfA0pky3wU3MlFsvn4Q==
-  dependencies:
-    that-simple-model "^1.0.1"
-
 "@types/jasmine@2.8.8":
   version "2.8.8"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.8.tgz#bf53a7d193ea8b03867a38bfdb4fbb0e0bf066c9"
@@ -591,7 +584,7 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-del@^3.0.0:
+del@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/del/-/del-3.0.0.tgz#53ecf699ffcbcb39637691ab13baf160819766e5"
   integrity sha1-U+z2mf/LyzljdpGrE7rxYIGXZuU=
@@ -1376,25 +1369,12 @@ jasmine-core@3.2.1:
   resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.2.1.tgz#8e4ff5b861603ee83343f2b49eee6a0ffe9650ce"
   integrity sha512-pa9tbBWgU0EE4SWgc85T4sa886ufuQdsgruQANhECYjwqgV4z7Vw/499aCaP8ZH79JDS4vhm8doDG9HO4+e4sA==
 
-jasmine-core@~3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.3.0.tgz#dea1cdc634bc93c7e0d4ad27185df30fa971b10e"
-  integrity sha512-3/xSmG/d35hf80BEN66Y6g9Ca5l/Isdeg/j6zvbTYlTzeKinzmaTM4p9am5kYqOmE05D7s1t8FGjzdSnbUbceA==
-
 jasmine-spec-reporter@4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/jasmine-spec-reporter/-/jasmine-spec-reporter-4.2.1.tgz#1d632aec0341670ad324f92ba84b4b32b35e9e22"
   integrity sha512-FZBoZu7VE5nR7Nilzy+Np8KuVIOxF4oXDPDknehCYBDE080EnlPu0afdZNmpGDBRCUBv3mj5qgqCRmk6W/K8vg==
   dependencies:
     colors "1.1.2"
-
-jasmine@^3.1.0:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jasmine/-/jasmine-3.3.1.tgz#d61bb1dd8888859bd11ea83074a78ee13d949905"
-  integrity sha512-/vU3/H7U56XsxIXHwgEuWpCgQ0bRi2iiZeUpx7Nqo8n1TpoDHfZhkPIc7CO8I4pnMzYsi3XaSZEiy8cnTfujng==
-  dependencies:
-    glob "^7.0.6"
-    jasmine-core "~3.3.0"
 
 jmespath@0.15.0:
   version "0.15.0"
@@ -1742,7 +1722,7 @@ node-pre-gyp@^0.11.0:
     semver "^5.3.0"
     tar "^4"
 
-node-zip@^1.1.1:
+node-zip@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/node-zip/-/node-zip-1.1.1.tgz#94d1ad674a3cd46a1588dd736f4a9a78c757eb62"
   integrity sha1-lNGtZ0o81GoViN1zb0qaeMdX62I=
@@ -1809,7 +1789,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nyc@11.9.0, nyc@^11.7.3:
+nyc@11.9.0:
   version "11.9.0"
   resolved "https://registry.yarnpkg.com/nyc/-/nyc-11.9.0.tgz#4106e89e8fbe73623a1fc8b6ecb7abaa271ae1e4"
   integrity sha512-w8OdJAhXL5izerzZMdqzYKMj/pgHJyY3qEPYBjLLxrhcVoHEY9pU5ENIiZyCgG9OR7x3VcUMoD40o6PtVpfR4g==
@@ -2066,7 +2046,7 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier@^1.14.2:
+prettier@1.16.4:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
   integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
@@ -2590,18 +2570,14 @@ test-exclude@^4.2.0:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
-that-build-library@0.1.31:
-  version "0.1.31"
-  resolved "https://registry.yarnpkg.com/that-build-library/-/that-build-library-0.1.31.tgz#8d34a794aba2995e96171ba62e9ebbc3e49c0fc5"
-  integrity sha512-7E6IEdifA+oe/o3OtyRPPGwcwwVbpOrnIK9vsoLr2iD+J3KpGFkw6qPiYn7Ep+zcWmIcOVaoNfwhZAHZHfB/BA==
+that-build-library@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/that-build-library/-/that-build-library-1.0.4.tgz#53e6dcfdcdc71d46ba819ce42c6baba47dca9adf"
+  integrity sha512-6V01VsHEfyD+ysEkz5c8qFfbtVuvvnd8+EOWDp2WgpfUFbTBbiDAdVcd8mAmP2tCRcljTQsvAlNslegElvE9QA==
   dependencies:
-    del "^3.0.0"
-    jasmine "^3.1.0"
-    node-zip "^1.1.1"
-    nyc "^11.7.3"
-    prettier "^1.14.2"
-    ts-node "^7.0.0"
-    tsconfig-paths "^3.5.0"
+    del "3.0.0"
+    node-zip "1.1.1"
+    prettier "1.16.4"
 
 that-koa-error@^1.0.1:
   version "1.0.8"
@@ -2621,6 +2597,13 @@ that-simple-model@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/that-simple-model/-/that-simple-model-1.0.2.tgz#930ab7cbe238dfdfe47c571d4a66334f14a2c5b4"
   integrity sha512-Ps4mW0U1nT/id91LskazJNxiPTaxhJLeRmGsD8FHMef/RFOUqUDMVDvysvs2V7b0m2AzDsf2SJCO2WDoy7ICkg==
+
+that-simple-objectstore-extended@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/that-simple-objectstore-extended/-/that-simple-objectstore-extended-1.0.9.tgz#53e29d0efedacf14f81dd67b1399e0e89bb32aa7"
+  integrity sha512-y+J6iXk33mCxkL0mG7rLXgXtcWuzW7y5g1ckfOtbyc90R7cBvagPxPEMxW94ugUy/+E7poRnGjto9tdh91HF6A==
+  dependencies:
+    that-simple-model "^1.0.1"
 
 to-fast-properties@^1.0.3:
   version "1.0.3"
@@ -2665,7 +2648,7 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-ts-node@7.0.1, ts-node@^7.0.0:
+ts-node@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-7.0.1.tgz#9562dc2d1e6d248d24bc55f773e3f614337d9baf"
   integrity sha512-BVwVbPJRspzNh2yfslyT1PSbl5uIk03EZlb493RKHN4qej/D06n1cEhjlOJG69oFsE7OT8XjpTUcYf6pKTLMhw==
@@ -2683,17 +2666,6 @@ tsconfig-paths@3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.6.0.tgz#f14078630d9d6e8b1dc690c1fc0cfb9cd0663891"
   integrity sha512-mrqQIP2F4e03aMTCiPdedCIT300//+q0ET53o5WqqtQjmEICxP9yfz/sHTpPqXpssuJEzODsEzJaLRaf5J2X1g==
-  dependencies:
-    "@types/json5" "^0.0.29"
-    deepmerge "^2.0.1"
-    json5 "^1.0.1"
-    minimist "^1.2.0"
-    strip-bom "^3.0.0"
-
-tsconfig-paths@^3.5.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.7.0.tgz#02ae978db447b22e09dafcd4198be95c4885ceb2"
-  integrity sha512-7iE+Q/2E1lgvxD+c0Ot+GFFmgmfIjt/zCayyruXkXQ84BLT85gHXy0WSoQSiuFX9+d+keE/jiON7notV74ZY+A==
   dependencies:
     "@types/json5" "^0.0.29"
     deepmerge "^2.0.1"
