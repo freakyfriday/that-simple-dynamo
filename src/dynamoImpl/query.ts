@@ -24,7 +24,7 @@ export async function query<T extends M.IModel>(
 			TableName: DynamoUtils.getTableName(cls),
 			...(where => {
 				if (!where) {
-					return {}
+					where = {}
 				}
 
 				const keys = DynamoUtils.getDynamoKey(cls)
@@ -43,8 +43,8 @@ export async function query<T extends M.IModel>(
 				return {
 					FilterExpression: _.isEmpty(filter) ? null : filter,
 					KeyConditionExpression: _.isEmpty(condition) ? null : condition,
-					ExpressionAttributeNames: names,
-					ExpressionAttributeValues: values,
+					ExpressionAttributeNames: _.isEmpty(names) ? null : names,
+					ExpressionAttributeValues: _.isEmpty(values) ? null : values,
 					ExclusiveStartKey: options.continuationToken,
 					Limit: options.limit,
 					ScanIndexForward: options.indexAsc
