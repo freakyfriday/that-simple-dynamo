@@ -42,7 +42,7 @@ export async function query<T extends M.IModel>(
 
 				return {
 					FilterExpression: _.isEmpty(filter) ? null : filter,
-					KeyConditionExpression: condition,
+					KeyConditionExpression: _.isEmpty(condition) ? null : condition,
 					ExpressionAttributeNames: names,
 					ExpressionAttributeValues: values,
 					ExclusiveStartKey: options.continuationToken,
@@ -54,7 +54,7 @@ export async function query<T extends M.IModel>(
 
 		// Create and Run DynamoDB Query
 		return await util
-			.promisify(c.query.bind(c))(dynamoQuery)
+			.promisify(c[(dynamoQuery.KeyConditionExpression) ? 'query' : 'scan'].bind(c))(dynamoQuery)
 			// Convert results into their Model classes
 			.then(async ({ Items, LastEvaluatedKey }) => {
 				let items = (Items || []).map(Item =>
